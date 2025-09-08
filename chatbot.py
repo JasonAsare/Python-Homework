@@ -7,7 +7,7 @@ chatbot = pyttsx3.init()
 
 choice = ("""
 Operation 1 (Shut Down)
-Operation 2 (Conversation)
+Operation 2 (Notepad)
 Operation 3 (Learn)
 """)
 
@@ -22,16 +22,9 @@ if user.strip() == "1":
     os.system("shutdown /s /t 1")
 
 elif user.strip() == "2":
-    chatbot.say("Do you want to have a conversation")
-    chatbot.runAndWait()
-    conver = input("Conversation: ")
-    if conver.strip() == "How are you":
-        chatbot.say("Fine")
-        chatbot.runAndWait()
-    if conver.strip() == "What is your name":
-        chatbot.say("My name is Smith")
-        chatbot.runAndWait()
-
+   chatbot.say("Opening notepad")
+   chatbot.runAndWait
+   os.system("notepad")
 
 elif user.strip() == "3":
     chatbot.say("Lets Learn someting")
