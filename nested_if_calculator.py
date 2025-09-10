@@ -34,6 +34,4 @@ else:
                         print("The number is", num1 % num2)
                     else:
                         print("Invalid key")
-            
-
-    
+                        
